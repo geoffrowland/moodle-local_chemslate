@@ -17,8 +17,9 @@
 /**
  * Atto text editor integration version file.
  *
- * @package    atto_mathslate
- * @copyright  2013 Daniel Thies <dthies@ccal.edu>
+ * @package    local_chemslate
+ * @copyright  2014 Geoffrey Rowland
+ * modified    from MathSlate @copyright 2013 Daniel Thies <dthies@ccal.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,8 +32,8 @@ defined('MOODLE_INTERNAL') || die();
 function local_mathslate_init($elementid) {
     global $PAGE, $OUTPUT, $CFG;
 
-    $PAGE->requires->strings_for_js(array( 'mathslate'),'local_mathslate');
+    $PAGE->requires->strings_for_js(array( 'chemslate'),'local_chemslate');
 
-    $PAGE->requires->yui_module('moodle-local_mathslate-editor');
+    $PAGE->requires->yui_module('moodle-local_chemslate-editor');
 
 }
