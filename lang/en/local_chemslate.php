@@ -18,9 +18,10 @@
  * Strings for component 'local_mathslate', language 'en'.
  *
  * @package    local_mathslate
- * @copyright  2013 Dan Thies <dthies@ccal.edu>
+ * @copyright  2014 Geoffrey Rowland
+ * modified    from MathSlate @copyright  2013 Dan Thies <dthies@ccal.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Mathslate';
-$string['mathslate'] = 'Mathslate';
+$string['pluginname'] = 'ChemSlate';
+$string['mathslate'] = 'ChemSlate';
