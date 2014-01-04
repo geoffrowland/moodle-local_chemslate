@@ -10,20 +10,21 @@ YUI.add('moodle-local_mathslate-editor', function (Y, NAME) {
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Atto text editor mathslate plugin.
+ * TinyMCE text editor chemslate plugin.
  *
- * @package    local_mathslate
- * @copyright  2013 Daniel Thies  <dthies@ccal.edu>
+ * @package    local_chemslate
+ * @copyright  2014 Geoffrey Rowland
+ * modified    from @copyright  2013 Daniel Thies  <dthies@ccal.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-M.local_mathslate = M.local_mathslate|| {};
+M.local_chemslate = M.local_chemslate|| {};
 /* Constructor function for an editor of a page.
  * @method Editor
  * @param string editorID
  * @param string config
  */
-M.local_mathslate.Editor=function(editorID,config){
+M.local_chemslate.Editor=function(editorID,config){
 /* Callback function to insert math into text after button is clicked.
  * params string Markup to be inserted.
  */
@@ -35,9 +36,9 @@ M.local_mathslate.Editor=function(editorID,config){
     var redo=this.node.appendChild(Y.Node.create('<button>Redo</button>'));
     var clear=this.node.appendChild(Y.Node.create('<button>Clear</button>'));
     this.node.appendChild(Y.Node.create('<div id="' +toolboxID +'">'));
-    this.node.appendChild(Y.Node.create('<div id="' +workID +'" class="mathslate-workspace">'));
+    this.node.appendChild(Y.Node.create('<div id="' +workID +'" class="chemslate-workspace">'));
 
-    var mje=new M.local_mathslate.MathJaxEditor('#'+workID);
+    var mje=new M.local_chemslate.MathJaxEditor('#'+workID);
     var me=this;
     me.output = function(f){return mje.output(f);};
     undo.on('click',function(){mje.undo();});
@@ -122,7 +123,7 @@ M.local_mathslate.Editor=function(editorID,config){
         }
     });
     if(config===undefined) {
-        Y.io(M.local_mathslate.config);
+        Y.io(M.local_chemslate.config);
     } else {
         Y.io(config);
     }
@@ -139,6 +140,6 @@ M.local_mathslate.Editor=function(editorID,config){
         "tabview",
         "io-base",
         "json",
-        "moodle-local_mathslate-mathjaxeditor"
+        "moodle-local_chemslate-mathjaxeditor"
     ]
 });
