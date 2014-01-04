@@ -1,7 +1,7 @@
-YUI.add('moodle-local_mathslate-snippeteditor', function (Y, NAME) {
+YUI.add('moodle-local_hemslate-snippeteditor', function (Y, NAME) {
 
-M.local_mathslate = M.local_mathslate|| {};
-M.local_mathslate.mSlots= function(){
+M.local_chemslate = M.local_chemslate|| {};
+M.local_chemslate.mSlots= function(){
     var stack=[];
     var stackPointer=0;
     var slots=[];
