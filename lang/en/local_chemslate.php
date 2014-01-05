@@ -15,13 +15,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mathslate', language 'en'.
+ * Strings for component 'local_chemslate', language 'en'.
  *
- * @package    local_mathslate
- * @copyright  2014 Geoffrey Rowland
- * modified    from MathSlate @copyright  2013 Dan Thies <dthies@ccal.edu>
+ * @package    local_chemslate
+ * @copyright  2014 Geoffrey Rowland <rowland.geoff@gmail.com>
+ * modified    from MathSlate @copyright  2013 Daniel Thies <dthies@ccal.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['pluginname'] = 'ChemSlate';
-$string['mathslate'] = 'ChemSlate';
+$string['chemslate'] = 'ChemSlate';

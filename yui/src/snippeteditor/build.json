@@ -1,7 +1,7 @@
 {
   "name" : "moodle-local_chemslate-snippeteditor" ,
   "builds" : {
-      "moodle-local_hemslate-snippeteditor": { 
+      "moodle-local_chemslate-snippeteditor": { 
           "jsfiles" : [ "snippeteditor.js" ]
        }
   }

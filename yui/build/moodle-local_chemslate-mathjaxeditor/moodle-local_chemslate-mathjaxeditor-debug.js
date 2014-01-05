@@ -13,21 +13,19 @@ M.local_chemslate.MathJaxEditor=function(id){
             se.forEach(function(m){
                 var node=canvas.get('node').one('#'+m[1].id);
                 if(!node){return;}
-                if(!m[1]||!m[1]['class']||m[1]['class']!=='blank'){
-                    var drag = new Y.DD.Drag({node: node}).plug(Y.Plugin.DDProxy, {
-                        resizeFrame: false,
-                        moveOnEnd: false
-                    });
-                    drag.on('drag:start', function(){
-                        var id = Y.guid();
-                        this.get('dragNode').set('innerHTML','' );
-                        MathJax.Hub.Queue(['addElement',MathJax.HTML,
-                            this.get('dragNode').getDOMNode(),'span',{id: id},
-                            [['math',{},[Y.JSON.parse(se.getItemByID(m[1].id))]]]]);
-                        MathJax.Hub.Queue(['Typeset',MathJax.Hub,id]);
+                var drag = new Y.DD.Drag({node: node}).plug(Y.Plugin.DDProxy, {
+                    resizeFrame: false,
+                    moveOnEnd: false
+                });
+                drag.on('drag:start', function(){
+                    var id = Y.guid();
+                    this.get('dragNode').set('innerHTML','' );
+                    MathJax.Hub.Queue(['addElement',MathJax.HTML,
+                        this.get('dragNode').getDOMNode(),'span',{id: id},
+                        [['math',{},[Y.JSON.parse(se.getItemByID(m[1].id))]]]]);
+                    MathJax.Hub.Queue(['Typeset',MathJax.Hub,id]);
                     
-                    });
-                }
+                });
 
 
                 var drop = new Y.DD.Drop({node: node});

@@ -18,8 +18,8 @@
  * Atto text editor integration version file.
  *
  * @package    local_chemslate
- * @copyright  2014 Geoffrey Rowland
- * modified    from MathSlate @copyright 2013 Daniel Thies <dthies@ccal.edu>
+ * @copyright  2014 Geoffrey Rowland <rowland.geoff@gmail.com>
+ * modified    from MathSlate @copyright  2013 Daniel Thies <dthies@ccal.edu>u>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -29,7 +29,7 @@ defined('MOODLE_INTERNAL') || die();
  * Initialise this plugin
  * @param string $elementid
  */
-function local_mathslate_init($elementid) {
+function local_chemslate_init($elementid) {
     global $PAGE, $OUTPUT, $CFG;
 
     $PAGE->requires->strings_for_js(array( 'chemslate'),'local_chemslate');

@@ -10,11 +10,11 @@ YUI.add('moodle-local_chemslate-editor', function (Y, NAME) {
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * TinyMCE text editor chemslate plugin.
+ * Local text editor chemslate plugin.
  *
  * @package    local_chemslate
- * @copyright  2014 Geoffrey Rowland
- * modified    @copyright 2013 Daniel Thies  <dthies@ccal.edu>
+ * @copyright  2014 Geoffrey Rowland <rowland.geoff@gmail.com>
+ * modified    from MathSlate @copyright  2013 Daniel Thies <dthies@ccal.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

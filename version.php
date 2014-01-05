@@ -15,17 +15,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * ChemSlate chemical equation editor version file.
+ * Chemslate math editor version file.
  *
  * @package    local
  * @subpackage chemslate
- * @copyright  2014 Geoffrey Rowland
+ * @copyright  2014 Geoffrey Rowland <rowland.geoff@gmail.com>
  * modified    from MathSlate @copyright  2013 Daniel Thies <dthies@ccal.edu>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2013080900;        // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2014010400;        // Requires this Moodle version.
+$plugin->version   = 2014010400;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2013050100;        // Requires this Moodle version.
 $plugin->component = 'local_chemslate';  // Full name of the plugin (used for diagnostics).

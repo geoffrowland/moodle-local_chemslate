@@ -1,4 +1,4 @@
-YUI.add('moodle-local_hemslate-snippeteditor', function (Y, NAME) {
+YUI.add('moodle-local_chemslate-snippeteditor', function (Y, NAME) {
 
 M.local_chemslate = M.local_chemslate|| {};
 M.local_chemslate.mSlots= function(){
