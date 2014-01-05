@@ -1,11 +1,11 @@
-YUI.add('moodle-local_mathslate-mathjaxeditor', function (Y, NAME) {
+YUI.add('moodle-local_chemslate-mathjaxeditor', function (Y, NAME) {
 
-M.local_mathslate = M.local_mathslate|| {};
-M.local_mathslate.MathJaxEditor=function(id){
+M.local_chemslate = M.local_chemslate|| {};
+M.local_chemslate.MathJaxEditor=function(id){
         var math=[];
-        var se=new M.local_mathslate.mSlots();
+        var se=new M.local_hemslate.mSlots();
         se.slots.push(math);
-        this.workspace=Y.one(id).append('<div id="canvas" class="mathslate-workspace"/>');
+        this.workspace=Y.one(id).append('<div id="canvas" class="chemslate-workspace"/>');
         var canvas=new Y.DD.Drop({
             node: this.workspace.one('#canvas')});
         this.canvas=canvas;
@@ -68,7 +68,7 @@ M.local_mathslate.MathJaxEditor=function(id){
         };
         this.clear = function(){
             math=[];
-            se=new M.local_mathslate.mSlots();
+            se=new M.local_chemslate.mSlots();
             se.slots.push(math);
             render();
         };
@@ -96,4 +96,4 @@ M.local_mathslate.MathJaxEditor=function(id){
 };
 
 
-}, '@VERSION@', {"requires": ["moodle-local_mathslate-snippeteditor", "dd-proxy", "dd-drop"]});
+}, '@VERSION@', {"requires": ["moodle-local_chemslate-snippeteditor", "dd-proxy", "dd-drop"]});
