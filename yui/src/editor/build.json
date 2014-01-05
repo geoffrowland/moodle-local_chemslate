@@ -1,7 +1,7 @@
 {
-  "name" : "moodle-local_mathslate-editor" ,
+  "name" : "moodle-local_chemslate-editor" ,
   "builds" : {
-      "moodle-local_mathslate-editor": { 
+      "moodle-local_chemslate-editor": { 
           "jsfiles" : [ "editor.js" ]
        }
   }
