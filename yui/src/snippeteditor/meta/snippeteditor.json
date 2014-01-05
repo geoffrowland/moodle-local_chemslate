@@ -1,5 +1,5 @@
 {
-  "moodle-local_mathslate-snippeteditor": {
+  "moodle-local_chemslate-snippeteditor": {
       "requires": [ "json" ] 
   }
 }
