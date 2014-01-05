@@ -1,5 +1,5 @@
-M.local_mathslate = M.local_mathslate|| {};
-M.local_mathslate.mSlots= function(){
+M.local_chemslate = M.local_chemslate|| {};
+M.local_chemslate.mSlots= function(){
     var stack=[];
     var stackPointer=0;
     var slots=[];
